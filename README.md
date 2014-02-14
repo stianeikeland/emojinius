@@ -32,6 +32,18 @@ emojinius.core=> (👊 🔟 🏁)
           (⤴ (➖ 💵 🔟))))
 ```
 
+## Installing
+
+Add `[emojinius "0.1.0"]` to the dependencies vector.
+
+```
+(ns program
+  [:use emojinius.core])
+
+(defn -main []
+  (📠 "🙋"))
+```
+
 ## Other
 
 Pull requests and dogecoins welcome. (DM3oLs8QcAaMu5UtYrroWjeKBiaTqevPzj)
