@@ -22,17 +22,19 @@
 (def 👊 take)
 (def 😻 concat)
 (def 🌍-🐈 mapcat)
-;(def 💤-🐈 lazy-cat)
+(def #^{:macro true} 💤-🐈 #'lazy-cat)
 (def 🌍 map)
 (def 🛃 filter)
 
 ;; # String
 (def 🔤 str)
+(def 📠 println)
 
 ;; # Functions
-;(def ▶ ->)
-;(def ⏩ ->>)
+(def #^{:macro true} ▶ #'->)
+(def #^{:macro true} ⏩ #'->>)
 (def 🆔 identity)
+(def #^{:macro true} ⌚-❓ #'when)
 
 ;; # Maps
 (def 🔑 keys)
@@ -42,8 +44,8 @@
 (def 👤 agent)
 
 ;; # Special
-;(def 🔁 loop)
-;(def ⤴ recur)
+(def #^{:macro true} 🔁 #'loop)
+(defmacro ⤴ [& args] `(recur ~@args))
 
 ;; # Java interop
 ;(def 🆕 new)
