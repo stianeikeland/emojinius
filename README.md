@@ -4,6 +4,8 @@ A Clojure library designed to explore strange new words, to seek out new scripts
 
 Write clojure code using emoji.
 
+![Emojinius](http://www.eikeland.se/other/emojinius.png)
+
 ## Example
 
 * `cycle` : 🚴
